@@ -10,45 +10,43 @@
 </head>
 <body>
    <div class="container">
-        <div class="header">
-            <span>Cadastro de Funcionários</span>
-            <button onclick="openModal()" id="new">Incluir</button>
+    <h1>Cadastro de Clientes</h1>
+    <form id="registre-form">
+        <div class="full-box">
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" placeholder="Nome" required>
         </div>
 
-    <div class="divTable">
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Função</th>
-                    <th>Salário</th>
-                    <th class="acao">Editar</th>
-                    <th class="acao">Excluir</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="modal-container">
-        <div class="modal">
-            <form>
-                <label for="m-nome">Nome</label>
-                <input type="text" name="nome" id="m-nome" required>
-
-                <label for="m-funcao">Função</label>
-                <input type="text" name="funcao" id="m-funcao" required>
-
-                <label for="m-salario">Salário</label>
-                <input type="text" name="salario" id="m-salario" required>
-                <button id="btnSalvar">Salvar</button>
-            </form>
+        <div class="half-box spacing">
+            <label for="iemail">E-Mail</label>
+            <input type="email" name="email" id="iemail" placeholder="E-mail" required>
         </div>
-    </div>
 
-</div> 
+        <div class="half-box">
+            <label for="itel">Telefone</label>
+            <input type="tel" name="tel" id="itel" placeholder="Telefone" required>
+        </div>
 
+        <div class="half-box spacing">
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" placeholder="Senha" required>
+        </div>
+
+        <div class="half-box">
+            <label for="iconfirmsenha">Confirmar senha</label>
+            <input type="password" name="confirmsenha" id="iconfirmsenha" placeholder="Confirmar senha" required>
+        </div>
+
+        <div class="full-box terms">
+            <input type="checkbox" name="terms" id="iterms">
+            <span>Li e concordo com os <a href="#">termos de uso</a>!</span>
+        </div>
+
+        <div class="full-box">
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+   </div>
 
 <script src="script.js"></script>
 </body>
