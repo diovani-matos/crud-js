@@ -11,8 +11,8 @@
 
 body {
     padding-top: 5vh;
-    background-color: #C7E8F3;
-    opacity: .87;
+    background:url(imagem/mountain-landscape-2031539_1920.jpg);
+    opacity: .85;
 }
 
 .container {
@@ -28,6 +28,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.9rem;
+    
     
 }
 
@@ -74,7 +75,7 @@ input {
 }
 
 input:focus {
-    border-color: #98E2C6;
+    border-color: #1523a5;
 }
 
 button {
@@ -83,8 +84,16 @@ button {
     padding: 10px;
     font-size: 1rem;
     margin-top: 20px;
-    color: #1523a5;
+    background-color: #1523a5;
+    color: white;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d176e;
+    color: white;
+    
+    transition: .5s ease;
 }
 
 input[type="checkbox"], span {
